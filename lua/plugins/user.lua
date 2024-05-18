@@ -41,6 +41,9 @@ return {
     end,
   },
 
+  -- window resizer
+  { "simeji/winresizer", event = "UIEnter" },
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
 
