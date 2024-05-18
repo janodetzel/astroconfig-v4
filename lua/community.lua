@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.lsp.lsp-signature-nvim", opts = {
     hint_enable = false,
   } },
+  { import = "astrocommunity.colorscheme.github-nvim-theme" },
   -- import/override with your plugins folder
 }
