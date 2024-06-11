@@ -24,7 +24,7 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "stylua",
         "prettierd",
-        "eslint_d",
+        "eslint",
         -- add more arguments for adding more null-ls sources
       })
     end,
