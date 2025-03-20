@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -42,6 +40,14 @@ return {
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
+      i = {
+        ["<C-h>"] = { require("smart-splits").move_cursor_left, desc = "Move cursor left" },
+        ["<C-j>"] = { require("smart-splits").move_cursor_down, desc = "Move cursor down" },
+        ["<C-k>"] = { require("smart-splits").move_cursor_up, desc = "Move cursor up" },
+        ["<C-l>"] = { require("smart-splits").move_cursor_right, desc = "Move cursor right" },
+        ["<C-BS>"] = { "<C-w>", desc = "Delete last word" },
+        ["<A-BS>"] = { "<C-w>", desc = "Delete last word" },
+      },
       -- first key is the mode
       n = {
         -- second key is the lefthand side of the map
@@ -64,6 +70,14 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+        -- center line in buffer
+        ["<C-u>"] = { "<C-u>zz", desc = "Center on <C-u>" },
+        ["<C-d>"] = { "<C-d>zz", desc = "Center on <C-d>" },
+
+        -- better increment/decrement
+        ["-"] = { "<c-x>", desc = "Descrement number" },
+        ["+"] = { "<c-a>", desc = "Increment number" },
       },
       t = {
         -- setting a mapping to false will disable it
