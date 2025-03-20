@@ -61,4 +61,7 @@ return {
       -- luasnip.filetype_extend("typescript", { "typescriptreact" })
     end,
   },
+  { "mfussenegger/nvim-dap", dependencies = {
+    { "theHamsta/nvim-dap-virtual-text", config = true },
+  } },
 }
