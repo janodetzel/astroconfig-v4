@@ -1,0 +1,13 @@
+{
+  "consoleLog": {
+    "prefix": [
+      "sos",
+      "log",
+      "clg"
+    ],
+    "body": [
+      "console.log(`🆘 ${JSON.stringify($1, null, 4)}`)"
+    ],
+    "description": "Readable JSON Log"
+  }
+}
