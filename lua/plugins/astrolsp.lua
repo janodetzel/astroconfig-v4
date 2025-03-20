@@ -6,6 +6,9 @@ return {
   "AstroNvim/astrolsp",
   ---@type AstroLSPOpts
   opts = {
+    autocmds = {
+      eslint_fix_on_save = false,
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
