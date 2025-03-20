@@ -1,34 +1,30 @@
-# AstroNvim Template
+```
+█████  ███████ ████████ ██████   ██████
+██   ██ ██         ██    ██   ██ ██    ██
+███████ ███████    ██    ██████  ██    ██
+██   ██      ██    ██    ██   ██ ██    ██
+██   ██ ███████    ██    ██   ██  ██████
 
-**NOTE:** This is for AstroNvim v4+
-
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
-
-## 🛠️ Installation
-
-#### Make a backup of your current nvim and shared folder
-
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
+    ███    ██ ██    ██ ██ ███    ███
+    ████   ██ ██    ██ ██ ████  ████
+    ██ ██  ██ ██    ██ ██ ██ ████ ██
+    ██  ██ ██  ██  ██  ██ ██  ██  ██
+    ██   ████   ████   ██ ██      ██
 ```
 
-#### Create a new user repository from this template
+# AstroNvim Configuration
 
-Press the "Use this template" button above to create a new repository to store your user configuration.
+## Astrovim
 
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
+- Version: v4.7.2
+- Homepage: https://astronvim.com/
+- Documentation: https://docs.astronvim.com/
+- Community: https://github.com/AstroNvim/astrocommunity
 
-#### Clone the repository
+## Requirements
 
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
-```
-
-#### Start Neovim
-
-```shell
-nvim
-```
+- btop: https://github.com/aristocratos/btop
+- lazygit: https://github.com/jesseduffield/lazygit
+- node: https://nodejs.org/en
+- ts-node: https://github.com/TypeStrong/ts-node
+- tsun (for codi): https://github.com/HerringtonDarkholme/typescript-repl
