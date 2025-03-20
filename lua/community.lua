@@ -7,9 +7,13 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.lsp.lsp-signature-nvim", opts = {
-    hint_enable = false,
-  } },
+  { import = "astrocommunity.pack.swift" },
+  {
+    import = "astrocommunity.lsp.lsp-signature-nvim",
+    opts = {
+      hint_enable = false,
+    },
+  },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.motion.nvim-surround" },
   -- import/override with your plugins folder
