@@ -41,6 +41,8 @@ return {
       local cmp = require "cmp"
       -- modify the sources part of the options table
       opts.sources = cmp.config.sources {
+        { name = "null_ls", priority = 1500 },
+        { name = "vtsls", priority = 1250 },
         { name = "nvim_lsp", priority = 1000 },
         { name = "luasnip", priority = 750 },
         { name = "buffer", priority = 500 },
@@ -61,7 +63,10 @@ return {
       -- luasnip.filetype_extend("typescript", { "typescriptreact" })
     end,
   },
-  { "mfussenegger/nvim-dap", dependencies = {
-    { "theHamsta/nvim-dap-virtual-text", config = true },
-  } },
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      { "theHamsta/nvim-dap-virtual-text", config = true },
+    },
+  },
 }

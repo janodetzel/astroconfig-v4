@@ -77,6 +77,15 @@ return {
         -- better increment/decrement
         ["-"] = { "<c-x>", desc = "Descrement number" },
         ["+"] = { "<c-a>", desc = "Increment number" },
+
+        ["gr"] = {
+          "<cmd>lua require('telescope.builtin').lsp_references({})<CR>",
+          desc = "References",
+        },
+        ["gd"] = {
+          "<cmd>lua require('telescope.builtin').lsp_definitions({})<CR>",
+          desc = "Go to definitions",
+        },
       },
       t = {
         -- setting a mapping to false will disable it

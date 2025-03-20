@@ -118,12 +118,12 @@ return {
       }
     end,
   },
-  {
-    "pmizio/typescript-tools.nvim",
-    opts = function(_, opts)
-      opts.settings = {
-        expose_as_code_action = "all",
-      }
-    end,
-  },
+  -- {
+  --   "pmizio/typescript-tools.nvim",
+  --   opts = function(_, opts)
+  --     opts.settings = {
+  --       expose_as_code_action = "all",
+  --     }
+  --   end,
+  -- },
 }
