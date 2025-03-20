@@ -11,5 +11,6 @@ return {
     hint_enable = false,
   } },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
+  { import = "astrocommunity.motion.nvim-surround" },
   -- import/override with your plugins folder
 }
