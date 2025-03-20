@@ -16,7 +16,7 @@
 
 ## Astrovim
 
-- Version: v4.7.2
+- Version: v4.32.3
 - Homepage: https://astronvim.com/
 - Documentation: https://docs.astronvim.com/
 - Community: https://github.com/AstroNvim/astrocommunity
